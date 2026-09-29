@@ -1,0 +1,2 @@
+Replace Edge for Android's download popup with a Copy/Download dialog and hand the download over to the system DownloadManager (or a chosen third-party downloader).
+把 Edge 的下载弹窗替换为「复制 / 下载」，下载交给系统下载器或第三方下载器。

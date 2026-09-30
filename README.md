@@ -1,22 +1,21 @@
 # edge_download_change
 
-LSPosed module for Microsoft Edge for Android (`com.microsoft.emmx`): replaces Edge's
-download confirmation dialog with a **Copy / Download** dialog and hands the download over
-to the **Android system DownloadManager** (or a chosen third-party downloader app) instead
-of Edge's own download manager.
+LSPosed 模块，适用于 Microsoft Edge 安卓版（`com.microsoft.emmx`）：把 Edge 的下载确认弹窗
+替换为**「复制 / 下载」**对话框，并把下载交给**安卓系统下载器**（或选定的第三方下载器 App），
+而不是 Edge 自带的下载管理器。
 
-- Scope: `com.microsoft.emmx` (declared statically) · libxposed API 102 · minSdk 26
-- Verified on Edge 153.0.4234.49
-- Signed with a stable key: updates install over previous versions
+- 作用域：`com.microsoft.emmx`（静态声明）· libxposed API 102 · minSdk 26
+- 已在 Edge 153.0.4234.49 上验证
+- 签名密钥固定：更新可直接覆盖安装
 
-## Install
+## 安装
 
-1. Install the APK from the [releases](https://github.com/lswlc33/edge_download_change/releases/latest)
-   (stable) or from the **beta channel** (`-beta.N` builds).
-2. Enable the module in LSPosed, keep the scope `com.microsoft.emmx`.
-3. Force-stop Edge and open it again; tapping a download link shows the Copy / Download dialog.
+1. 从 [releases](https://github.com/lswlc33/edge_download_change/releases/latest)（稳定版）
+   或 **beta 通道**（`-beta.N` 构建）安装 APK；
+2. 在 LSPosed 中启用本模块，保持作用域 `com.microsoft.emmx`；
+3. 强制停止 Edge 后重新打开；点网页下载链接即出现「复制 / 下载」对话框。
 
-## Source
+## 源码
 
-Source code, documentation and the analysis that was used to derive the hook targets:
+源码、文档以及 hook 目标的分析过程：
 <https://github.com/lswlc33/edge_download_change>
